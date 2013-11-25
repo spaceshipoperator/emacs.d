@@ -202,12 +202,12 @@ make sure to install color-theme from your package manager as recommended
 ** python stuff
    - taken from http://pedrokroger.com/2010/07/configuring-emacs-as-a-python-ide-2/
 #+begin_src emacs-lisp
-(setenv "PYTHONPATH" ".")
-(require 'python-mode)
-(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
+;;(setenv "PYTHONPATH" ".")
+;;(require 'python-mode)
+;;(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
 
-(setq ipython-command "/usr/bin/ipython2")
-(require 'ipython)
+;;(setq ipython-command "/usr/bin/ipython2")
+;;(require 'ipython)
 #+end_src
 
 ** speaking statistics

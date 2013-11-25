@@ -4,6 +4,3 @@
 [submodule "src/evil"]
 	path = src/evil
 	url = git://gitorious.org/evil/evil.git
-[submodule "src/ess"]
-	path = src/ess
-	url = git://github.com/emacsmirror/ess.git
