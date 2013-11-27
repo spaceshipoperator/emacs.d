@@ -197,7 +197,12 @@ make sure to install color-theme from your package manager as recommended
 (setq org-ditaa-jar-path "/usr/share/emacs/site-lisp/org_contrib/scripts/ditaa.jar")
 #+end_src
 
-   - ditaa
+   - blorgit server
+#+begin_src emacs-lisp
+(load-file "~/blorgit/backend/acts_as_org/elisp/org-interaction.el")
+#+end_src
+
+   - org-drill and other stuff too
 #+begin_src emacs-lisp
 (add-to-list 'load-path "~/org-mode/contrib/lisp" t)
 (require 'org-drill)
@@ -225,6 +230,13 @@ make sure to install color-theme from your package manager as recommended
 #+begin_src emacs-lisp
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "chromium")
+#+end_src
+
+* spanish
+from [[http://thinkinghard.com/spanish/spanish.el][thinkinghard]]
+#+begin_src emacs-lisp
+(autoload 'spanish-minor-mode "spanish")
+(global-set-key [?\M-\C-S] 'spanish-minor-mode)
 #+end_src
 
 * keybindings
@@ -264,7 +276,6 @@ make sure to install color-theme from your package manager as recommended
 #+begin_src emacs-lisp
 (global-set-key (kbd "C-c y") 'copy-region-as-kill)
 #+end_src
-
 
 * things i don't have yet but want
 color ps1 in eshell in a good way
